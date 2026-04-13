@@ -1,0 +1,37 @@
+{
+  "name": "icemcp",
+  "version": "1.0.0",
+  "description": "mcp server for icevent eco",
+  "main": "dist/index.js",
+  "bin": {
+    "icemcp": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEvent/icemcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+
+  "bugs": {
+    "url": "https://github.com/ICEvent/icemcp/issues"
+  },
+  "homepage": "https://github.com/ICEvent/icemcp#readme",
+  "dependencies": {
+    "@dfinity/agent": "^3.4.3",
+    "@dfinity/candid": "^3.4.3",
+    "@dfinity/principal": "^3.4.3",
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
+  }
+}

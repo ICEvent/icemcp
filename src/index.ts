@@ -390,7 +390,11 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           content: [
             {
               type: "text",
-              text: toText({ minVotePercentage: minVote, minPowerPercentage: minPower, maxAmountPercentage: maxAmount }),
+              text: toText({
+                minVotePercentage: minVote,
+                minPowerPercentage: minPower,
+                maxAmountPercentage: maxAmount,
+              }),
             },
           ],
         };

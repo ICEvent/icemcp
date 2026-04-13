@@ -54,7 +54,7 @@ export const idlFactory: IDL.InterfaceFactory = ({ IDL }) => {
 
   const Grant = IDL.Record({
     grantId: IDL.Int,
-    submitime: IDL.Int,
+    submitime: IDL.Int, // field name matches canister Candid interface (typo preserved intentionally)
     title: IDL.Text,
     description: IDL.Text,
     recipient: IDL.Text,

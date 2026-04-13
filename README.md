@@ -90,6 +90,45 @@ Add the following to your `claude_desktop_config.json`:
 
 ---
 
+## Deploying on Vercel
+
+The repository includes a Vercel-ready HTTP handler (`api/mcp.ts`) that uses the
+[MCP Streamable HTTP transport](https://modelcontextprotocol.io/specification/basic/transports)
+in stateless mode — perfect for serverless functions.
+
+### One-click deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ICEvent/icemcp)
+
+### Manual deploy
+
+```bash
+npm install -g vercel
+vercel
+```
+
+The MCP endpoint will be available at:
+
+```
+https://<your-deployment>.vercel.app/mcp
+```
+
+### Connecting an AI client to the Vercel deployment
+
+Use the `url` transport in your MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "icemcp": {
+      "url": "https://<your-deployment>.vercel.app/mcp"
+    }
+  }
+}
+```
+
+---
+
 ## Architecture
 
 The server uses:

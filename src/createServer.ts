@@ -3,7 +3,7 @@ import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
-import { Principal } from "@dfinity/principal";
+import { Principal } from "@icp-sdk/core/principal";
 
 import { createOneBlockActor } from "./canisters/oneblock.js";
 import { createDefundsActor } from "./canisters/defunds.js";

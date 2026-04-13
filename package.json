@@ -25,9 +25,7 @@
   },
   "homepage": "https://github.com/ICEvent/icemcp#readme",
   "dependencies": {
-    "@dfinity/agent": "^3.4.3",
-    "@dfinity/candid": "^3.4.3",
-    "@dfinity/principal": "^3.4.3",
+    "@icp-sdk/core": "^5.2.1",
     "@modelcontextprotocol/sdk": "^1.29.0"
   },
   "devDependencies": {
